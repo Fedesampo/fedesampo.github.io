@@ -1,0 +1,155 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+header {
+    background-color: burlywood;
+      border: solid black;
+      margin-top: auto;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: auto;
+      padding: auto;      
+  }
+main {
+    float: left;
+    border: 1px solid black;
+  }
+
+nav button {
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+  }
+ 
+.datos_personales {
+    float: left;
+    padding: 15px;
+    
+  }
+footer{
+    background-color: burlywood;
+    border: solid black;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    padding: auto;      
+}
+
+ul{
+      text-size-adjust: auto;
+  }
+
+li{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  color: burlywood;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  text-size-adjust: auto;
+}  
+
+.responsive{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    align-items: center;
+    
+}
+
+h1{
+    color: black;
+    margin: 15px;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    text-size-adjust: auto;
+}
+
+.educacion{
+  color: black;
+  align-items: left;
+  text-align: left;
+  font-family: 'Arvo', serif;
+  text-size-adjust: auto;
+  list-style-type: square; 
+  list-style-position: inside; 
+}
+
+h2{
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    text-size-adjust: auto;
+}
+
+h4{
+  color: black;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    text-size-adjust: auto;
+}
+
+h5{
+  color: whitesmoke;
+    text-align: center;
+    font-family: 'Arvo', serif;
+    text-size-adjust: auto;
+  font-size:x-large;
+}
+
+p{
+  color: black;
+  margin:15px;
+  text-align: center;
+  font-family: 'Roboto',serif;
+  text-size-adjust: auto;
+
+}
+
+ [Class*= col-]{
+  float: left;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: auto;
+
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+ }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CSS/proyectofinal.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Proyecto Final - C.V.</title>
+</head>
+<body>
+    <header class="header col-12">
+        <h1>CURRICULUM VITAE </h1>
+        <h2 id="nombreyapellido"></h2>
+        <p id = "mensaje"> (Presione los botones para información sobre redes sociales)
+
+        </p>
+        <nav>
+        <button type="button" id="boton1" class="col-3 col-s-12">Faceebook</button> 
+        <button type="button" id="boton2" class="col-3 col-s-12" >Instagram</button>
+        <button type="button" id="boton3" class="col-3 col-s-12">Linkedin</button>
+        <button type="button" id="boton4" class="col-3 col-s-12">Pagina Web</button>
+        </nav>
+    </header>
+            
+    <main>
+        <section id="foto_y_datos_personales" class="datos_personales col-4 col-s-12 ">
+            <img src="https://randomuser.me/api/portraits/men/77.jpg" 
+            alt="Imágen"
+            class= "responsive" 
+             />
+            <h2>Datos Personales               
+            </h2>
+                <ul style="list-style-type:disc;" class="responsive">
+                    <li id="nombre" ></li>
+                    <li id="apellido"></li>
+                    <li id="edad" ></li>
+                    <li id="nacimiento"></li>
+                    <li id="telefono" ></li>
+                </ul>
+        </section>
+
+        <section id="experiencia_laboral" class="col-4 col-s-12 " >
+            <h2>Experiencia Laboral</h2>
+                <nav>
+                    <h3>Administrativo de Fomentos/Gestor Cultural.</h3>
+                    <h4>Municipalidad de Córdoba - (Mayo 2022 - Presente)</h4>
+                    <p>Tareas Administrativas generales, Presupuesto. Presentación de proyecto de artistas
+                    locales y regionales y de la Municipalidad a diversos concursos y fomentos. Al día de hoy
+                    conseguí $2.300.000 para eventos de la municipalidad, equipamiento del centro cultural,
+                    y músicos locales.
+                    </p>
+                </nav>
+                <nav>
+                    <h3>Asistente de producción/Administrativo.</h3>
+                    <h4>Estudio de Grabación Sonorámica. (Noviembre 2019 – Febrero 2022).</h4>
+                    <p>Asistente de Grabación, Gestión de Subsidios, Administración de redes sociales, mailing,
+                    mantenimiento de hospedaje, administración general.
+                    </p>
+                </nav>
+                <nav>
+                    <h3>Responsable Administrativo.</h3>
+                    <h4>Calzalindo. (Enero 2018 – Abril 2019).</h4>
+                    <p>Control de cierres diarios. Gestión de Tesorería. Conciliación de cuentas y 
+                    pago a proveedores. Armado de Cash Flow. Conciliaciones Bancarias. Impuestos.
+                    Análisis de riesgo crediticio de clientes y Gestión con financieras externas.
+                    Compras de insumos corrientes. Apoyo comercial a Venta Online vía Pagina Web.
+                    Tareas para adaptar el sistema de gestión a los requisitos de la empresa.
+                    Manejo integral de redes sociales, estrategias individualizadas de marca, 
+                    segmentación de público. Gestión de resultados.
+                    </p>
+                </nav>
+        </section>  
+        <section id="educacion" class="main col-4 col-s-12 ">
+            <h2>Estudios</h2>
+                <ul class="">
+                    <li id="titulosecundario"></li>
+                    <li id="escuela"></li> 
+                    <li id="titulo"></li>
+                    <li id="universidad"></li>
+               </ul >
+            <h2>Otros Cursos</h2>
+            <p>“Formación en Industrias Creativas Herramientas Proyectuales para Productores
+                Culturales” (2020)<p>
+            <p>“Mi Negocio en Internet” (2019): Marketing Digital. Redes Sociales y Páginas Web"<p>
+            <p>“Finanzas Para Pymes” (2018): Nuevas Herramientas para el Mercado Actual</p>
+            <p>“Evaluación de Proyectos de Inversión”. Bolsa de Comercio de Rosario. (2012)</p>
+            <p>“Programa de Formación Bursátil”. Bolsa de Comercio de Rosario. (2012)</p>
+ 
+        </section>    
+
+    </main>
+
+    <footer id="referencias" class="col-12">
+            <h2>Referencias Laborales</h2>
+            <h5>Administrativo de Fomentos/Gestor Cultural.</h5>
+            <p>Juana Perez:Coordinadora -  Teléfono: 3462689541</p>
+            <h5>Asistente de producción/Administrativo.</h5>
+            <p>Juan Perez: Productor Musical - Teléfono: 6544896542</p>
+            <h5>Responsable Administrativo.</h5>
+            <p>Horacio Peña: Socio - Teléfono: 112285336</p>
+
+    </footer>
+
+<script>
+    const datospersonales = '{"nombre":"Jennie","apellido":"Nichols","direccion":"Valwood Pkwy","numerodireccion":8929 ,"ciudad":" Miami","país":"Estados Unidos","fechanacimiento": "1992-03-08T15:13:16.688Z","edad": 30, "telefono":"(272) 790-0888", "titulo":"Licenciado en Economia", "universidad":"Cambridge University" ,"titulosecundario": "Bachiller" , "escuela": "EMMN°214"}'
+    const obj = JSON.parse(datospersonales); 
+    console.log(obj);
+    
+    document.getElementById("nombre").innerHTML = "Nombre:"+obj.nombre
+    document.getElementById("apellido").innerHTML = "Apellido:"+obj.apellido
+    document.getElementById("edad").innerHTML = "Edad:"+obj.edad
+    document.getElementById("nacimiento").innerHTML = "Fecha de Nacimiento:"+obj.fechanacimiento
+    document.getElementById("telefono").innerHTML = "Teléfono:"+obj.telefono
+    document.getElementById("nombreyapellido").innerHTML =" " +obj.apellido +" " +obj.nombre 
+    document.getElementById("titulosecundario").innerHTML ="Título Secundario:  "+obj.titulosecundario
+    document.getElementById("escuela").innerHTML ="Escuela:  "+obj.escuela
+    document.getElementById("titulo").innerHTML ="Título Universitario:  "+obj.titulo 
+    document.getElementById("universidad").innerHTML ="Universidad:  "+obj.universidad
+    </script>
+<script src="js/proyectofinal.js"></script> 
+    
+</body>
+</html>
